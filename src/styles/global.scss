@@ -5,12 +5,12 @@
 }
 
 body {
-  min-width: 320px; 
+  min-width: 320px;
   min-height: 100dvh;
-  font-family: $font-main; 
+  font-family: $font-main;
   font-weight: 400;
   line-height: 1.6;
-  background-color: $secondary-color; 
+  background-color: $secondary-color;
   color: $text-color-primary;
 }
 
@@ -21,12 +21,12 @@ body {
 .container {
   margin: 0 auto;
   padding: 0 20px;
-  max-width: 1200px;  
-  width: 100%;  
+  max-width: 1200px;
+  width: 100%;
   height: 100%;
 
-  &--wide { 
-    max-width: 1760px; 
+  &--wide {
+    max-width: 1760px;
   }
 }
 
@@ -63,16 +63,16 @@ body {
   user-select: none;
   background-color: $accent-color;
   color: $primary-color;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
   &:hover {
     background-color: $controls-bg-primary-hover;
   }
   &--light {
     background-color: $primary-color;
-
-    &:hover {
-      background-color: $accent-color;
-    }
+  }
+  &:hover {
+    background-color: $accent-color;
   }
 }
-
