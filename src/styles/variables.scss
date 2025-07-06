@@ -1,12 +1,20 @@
 $font-main: 'Jost', sans-serif;
+
+// Цвета
 $primary-color: #141024;
 $accent-color: #d52027;
 $secondary-color: #fff;
+
+// Цвета текста
 $text-color-primary: $primary-color;
 $text-color-accent: $accent-color;
 $text-color-secondary: $secondary-color;
+
+// Фоны
 $bg-color-primary: $primary-color;
 $bg-color-accent: $accent-color;
+
+// Кнопки и элементы управления
 $controls-bg-primary: $accent-color;
 $controls-bg-primary-hover: #b9191d;
 $controls-bg-secondary: $primary-color;
