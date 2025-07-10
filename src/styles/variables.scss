@@ -1,3 +1,23 @@
-$font-main: 'Montserrat', sans-serif;
+$font-main: 'Jost', sans-serif;
 
-$someColor: #000000;
+// Цвета
+$primary-color: #141024;
+$accent-color: #d52027;
+$secondary-color: #ffffff;
+
+// Цвета текста
+$text-color-primary: $primary-color;
+$text-color-accent: $accent-color;
+$text-color-secondary: $secondary-color;
+
+// Фоны
+$bg-color-primary: $secondary-color;
+$bg-color-accent: $accent-color;
+$bg-color-secondary: $primary-color;
+
+// Кнопки и элементы управления
+$controls-bg-primary: $accent-color;
+$controls-bg-primary-hover: #b9191d;
+$controls-bg-secondary: $primary-color;
+$controls-bg-secondary-hover: #282148;
+$controls-color-primary: $secondary-color;
