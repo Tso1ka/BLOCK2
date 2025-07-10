@@ -1,0 +1,26 @@
+main {
+  flex-grow: 1;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index;
+  background-color: bg-color-secondary;
+  padding: 30 410 20 20;
+}
+
+header .container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer {
+  display: flex;
+  //justify-content: space-between;
+  min-height: 100dvh;
+  padding: 40 0;
+  background-color: bg-color-secondary;
+  color:text-color-secondary;
+}
