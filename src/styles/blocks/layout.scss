@@ -7,7 +7,7 @@
 .header {
   position: sticky;
   top: 60px;
-  background-color: $bg-color-secondary;
+  background-color:  red !important;
   padding: 30px 410px 20px;
 }
 
@@ -21,7 +21,7 @@
   display: flex;
   min-height: 100px;
   justify-content: space-between;
-  padding: 40 0;
+  padding: 40px 0;
   background-color: $bg-color-secondary;
-  color: text-color-secondary;
+  color: $text-color-secondary;
 }
