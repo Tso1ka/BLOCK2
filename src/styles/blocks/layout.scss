@@ -4,8 +4,8 @@
 
 .header {
   position: sticky;
-  top: 60;
-  background-color: bg-color-secondary;
+  top: 60px;
+  background-color: $bg-color-secondary;
   padding: 30px 410px 20px;
 }
 
@@ -17,9 +17,9 @@
 
 .footer {
   display: flex;
-  min-height: 100vh;
+  min-height: 100px;
   justify-content: space-between;
   padding: 40 0;
-  background-color: bg-color-secondary;
+  background-color: $bg-color-secondary;
   color: text-color-secondary;
 }
