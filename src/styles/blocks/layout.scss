@@ -6,8 +6,9 @@
 
 .header {
   position: sticky;
+  z-index: 1;
   top: 60px;
-  background-color: red !important;
+  background-color: $bg-color-secondary;
   padding: 30px 410px 20px;
 }
 
