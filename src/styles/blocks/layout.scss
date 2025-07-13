@@ -12,7 +12,7 @@
   padding: 30px 20px 410px;
 }
 
-header .container {
+.header .container {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -29,10 +29,6 @@ header .container {
   color: $text-color-secondary;
   list-style: none;
   display: inline-block;
-}
-
-.nav__link:hover {
-  color: #e74c3c;
 }
 
 .nav__item {
