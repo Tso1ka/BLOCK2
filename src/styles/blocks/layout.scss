@@ -23,6 +23,25 @@
   gap: 40px;
 }
 
+.header__content {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  width: 100%;
+}
+
+.logo {
+  justify-self: start;
+}
+
+.header-nav {
+  justify-self: center;
+}
+
+.tel {
+  justify-self: end;
+}
+
 .header-nav__link {
   text-decoration: none;
   color: $text-color-secondary;
