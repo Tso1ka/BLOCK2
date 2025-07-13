@@ -7,46 +7,59 @@
 .header {
   position: sticky;
   z-index: 10;
-  top: 60px;
+  top: 0;
+  padding: 20px 0;
   background-color: $bg-color-secondary;
-}
 
-.header .container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.header-nav {
-  display: flex;
-  justify-content: center;
-  gap: 40px;
-}
-
-.header__content {
-  display: grid;
-  grid-template-columns: 1fr auto 1fr;
-  align-items: center;
-  width: 100%;
-}
-
-.logo {
-  justify-self: start;
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
 }
 
 .header-nav {
-  justify-self: center;
-}
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 
-.tel {
-  justify-self: end;
-}
+  &__list {
+    display: flex;
+    gap: 40px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
 
-.header-nav__link {
-  text-decoration: none;
-  color: $text-color-secondary;
-  list-style: none;
-  display: inline-block;
+  &__link {
+    display: inline-block;
+    padding: 5px 0;
+    font-size: 18px;
+    text-decoration: none;
+    color: $text-color-secondary;
+    transition: opacity 0.3s ease;
+    position: relative;
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background-color: $accent-color;
+      transition: width 0.3s ease;
+    }
+
+    &:hover::after {
+      width: 100%;
+    }
+  }
 }
 
 .nav__item {
@@ -54,10 +67,26 @@
 }
 
 .footer {
-  display: flex;
-  min-height: 100px;
-  justify-content: space-between;
-  padding: 40px 0;
-  background-color: $bg-color-secondary;
-  color: $text-color-secondary;
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  &-top-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &-bottom-block {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid rgba($text-color-secondary, 0.2);
+
+    &__copyright {
+      font-size: 14px;
+      opacity: 0.7;
+    }
+  }
 }
