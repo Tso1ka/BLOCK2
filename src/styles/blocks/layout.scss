@@ -6,7 +6,7 @@
 
 .header {
   position: sticky;
-  z-index: 1;
+  z-index: 10;
   top: 60px;
   background-color: $bg-color-secondary;
   padding: 30px 20px 410px;
@@ -24,9 +24,19 @@ header .container {
   gap: 40px;
 }
 
-.header-nav__list {
+.header-nav__link {
   text-decoration: none;
   color: $text-color-secondary;
+  list-style: none;
+  display: inline-block;
+}
+
+.nav__link:hover {
+  color: #e74c3c;
+}
+
+.nav__item {
+    position: relative;
 }
 
 .footer {
