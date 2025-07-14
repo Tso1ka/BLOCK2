@@ -80,11 +80,12 @@
   padding: 40px 0;
   background-color: $bg-color-secondary;
   color: $text-color-secondary;
+}
 
-  &__content {
+.footer-top-block {
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: relative;
   }
-}
+
