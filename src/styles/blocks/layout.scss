@@ -63,7 +63,7 @@
   transition: color 0.3s ease;
 
   &:hover {
-    color: $accent-color; // Или любой другой цвет при наведении
+    color: $accent-color;
     opacity: 0.8;
   }
 }
@@ -76,7 +76,15 @@
   display: flex;
   min-height: 100px;
   justify-content: space-between;
+  align-items: center;
   padding: 40px 0;
   background-color: $bg-color-secondary;
   color: $text-color-secondary;
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
 }
