@@ -6,17 +6,17 @@
 
 .header {
   position: sticky;
-  z-index: 10;
   top: 0;
-  padding: 20px 0;
+  z-index: 10;
+  padding: 40px 0;
   background-color: $bg-color-secondary;
+}
 
-  &__content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-  }
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
 }
 
 .header-nav {
@@ -34,25 +34,19 @@
 
   &__link {
     display: inline-block;
-    padding: 5px 0;
-    font-size: 18px;
     text-decoration: none;
     color: $text-color-secondary;
-    transition: opacity 0.3s ease;
     position: relative;
   }
 }
 
 .tel {
   justify-self: end;
+  text-decoration: none;
 }
 
 .logo {
   justify-self: start;
-}
-
-.nav__item {
-  position: relative;
 }
 
 .footer {
