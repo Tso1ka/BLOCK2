@@ -8,7 +8,7 @@
   position: sticky;
   top: 0;
   z-index: 10;
-  padding: 20px 0;
+  padding: 40px 0;
   background-color: $bg-color-secondary;
 
   &__content {
@@ -27,8 +27,6 @@
   &__list {
     display: flex;
     gap: 40px;
-    margin: 0;
-    padding: 0;
     list-style: none;
   }
 
@@ -37,6 +35,25 @@
     text-decoration: none;
     color: $text-color-secondary;
     position: relative;
+  }
+
+      &:hover {
+    opacity: 0.8;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: $accent-color;
+    transition: width 0.3s ease;
+  }
+
+  &:hover::after {
+    width: 100%;
   }
 }
 
