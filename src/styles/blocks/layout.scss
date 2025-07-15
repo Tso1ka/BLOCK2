@@ -10,13 +10,13 @@
   z-index: 10;
   padding: 40px 0;
   background-color: $bg-color-secondary;
-}
 
-.container--wide {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: relative;
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
 }
 
 .header-nav {
@@ -71,4 +71,11 @@
   padding: 40px 0;
   background-color: $bg-color-secondary;
   color: $text-color-secondary;
+}
+
+.footer-top-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
 }
