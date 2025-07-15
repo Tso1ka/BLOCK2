@@ -36,10 +36,6 @@
     color: $text-color-secondary;
     position: relative;
 
-    &:hover {
-      opacity: 0.8;
-    }
-
     &::after {
       content: '';
       position: absolute;
@@ -58,16 +54,10 @@
 }
 
 .tel {
-  justify-self: end;
   text-decoration: none;
 }
 
-.logo {
-  justify-self: start;
-}
-
 .footer {
-  min-height: 100px;
   padding: 40px 0;
   background-color: $bg-color-secondary;
   color: $text-color-secondary;
