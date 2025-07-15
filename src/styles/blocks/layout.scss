@@ -73,10 +73,9 @@
   color: $text-color-secondary;
 }
 
-.footer-top-block {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-  }
-
+.container--wide {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
