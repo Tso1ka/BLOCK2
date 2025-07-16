@@ -1,14 +1,10 @@
 @use '../variables' as *;
 
-.main {
-  flex-grow: 1;
-}
-
 .header {
   position: sticky;
   top: 0;
-  z-index: 10;
-  padding: 40px 0;
+  z-index: 500;
+  padding: 30px 0;
   background-color: $bg-color-secondary;
 
   &__content {
@@ -16,56 +12,56 @@
     justify-content: space-between;
     align-items: center;
     position: relative;
-  }
-}
-
-.header-nav {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-
-  &__list {
-    display: flex;
-    gap: 40px;
-    list-style: none;
-  }
-
-  &__link {
-    display: inline-block;
-    text-decoration: none;
-    color: $text-color-secondary;
-    position: relative;
-
-    &::after {
-      content: '';
+        
+    .header-nav {
       position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 0;
-      height: 2px;
-      background-color: $controls-bg-primary-hover;
-      transition: width 0.3s ease;
-    }
+      left: 50%;
+      transform: translateX(-50%);
 
-    &:hover::after {
-      width: 100%;
+      &__list {
+        display: flex;
+        gap: 40px;
+        list-style: none;
+      }
+
+      &__link {
+        display: inline-block;
+        text-decoration: none;
+        color: $text-color-secondary;
+        position: relative;
+
+        &::after {
+          content: '';
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 0;
+          height: 2px;
+          background-color: $controls-color-primary;
+          transition: width 0.3s ease;
+        }
+
+        &:hover::after {
+          width: 100%;
+        }
+      }
     }
   }
 }
 
-.tel {
-  text-decoration: none;
+.main {
+  flex-grow: 1;
 }
 
 .footer {
   padding: 40px 0;
   background-color: $bg-color-secondary;
   color: $text-color-secondary;
-}
 
-.footer-top-block {
+  .footer-top-block {
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: relative;
+  }
 }
