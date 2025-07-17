@@ -1,0 +1,62 @@
+@use '../variables' as *;
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 500;
+  padding: 30px 0;
+  background-color: $bg-color-secondary;
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+
+    .header-nav {
+      &__list {
+        display: flex;
+        gap: 40px;
+        list-style: none;
+      }
+
+      &__link {
+        display: inline-block;
+        text-decoration: none;
+        color: $text-color-secondary;
+        position: relative;
+
+        &::after {
+          content: '';
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 0;
+          height: 2px;
+          background-color: $controls-color-primary;
+          transition: width 0.3s ease;
+        }
+
+        &:hover::after {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+.main {
+  flex-grow: 1;
+}
+
+.footer {
+  padding: 40px 0;
+  background-color: $bg-color-secondary;
+  color: $text-color-secondary;
+
+  .footer-top-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

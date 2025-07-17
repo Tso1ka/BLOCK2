@@ -5,6 +5,8 @@
 }
 
 body {
+  display: flex;
+  flex-direction: column;
   min-width: 320px;
   min-height: 100dvh;
   font-family: $font-main;
@@ -40,6 +42,7 @@ section {
   font-weight: 600;
   font-size: 30px;
   color: $text-color-secondary;
+  text-decoration: none;
 }
 
 .button {
