@@ -1,2 +1,38 @@
+@use '../variables' as *;
+
 .promo {
+  background-color: $bg-color-secondary;
+  color: $text-color-secondary;
+  height: calc(100dvh - 108px);
+  max-height: 972px;
+  position: relative;
+  overflow: hidden;
 }
+
+.promo__img {
+  position: absolute;
+  top: 0%;
+  left: 49%;
+  width: 783px;
+  height: auto;
+}
+
+.promo__content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 516px;
+  margin-top: 116px;
+
+  &-logo {
+    font-weight: bold;
+    font-weight: 600;
+    font-size: 70px;
+    line-height: 1.6;
+  }
+  &-heading {
+    padding-bottom: 50px;
+    width: 380px;
+  }
+}
+
