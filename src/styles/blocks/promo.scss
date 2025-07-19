@@ -11,7 +11,7 @@
 
 .promo__img {
   position: absolute;
-  top: 0%;
+  top: 8.5%;
   left: 49%;
   width: 783px;
   height: auto;
@@ -31,8 +31,10 @@
     line-height: 1.6;
   }
   &-heading {
+    font-size: 20px;
+    padding-top: 20px;
     padding-bottom: 50px;
-    width: 380px;
+    width: 478px;
   }
 }
 
