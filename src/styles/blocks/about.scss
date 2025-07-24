@@ -1,7 +1,7 @@
 @use '../variables' as *;
 
 .about {
-  &__description {
+  .about__description {
     font-size: 30px;
     max-width: 890px;
   }
@@ -11,6 +11,7 @@
     display: flex;
     align-items: flex-start;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 40px;
 
     .about-stat {
@@ -19,6 +20,7 @@
       &__value {
         font-size: 70px;
         font-weight: 600;
+        white-space: nowrap;
         color: $text-color-accent;
       }
 
