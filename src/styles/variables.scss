@@ -4,17 +4,20 @@ $font-main: 'Jost', sans-serif;
 $primary-color: #141024;
 $accent-color: #d52027;
 $secondary-color: #ffffff;
+$tertiary-color: #f9f9f9;
+$quaternary-color: rgba(20, 16, 36, 0.7);
 
 // Цвета текста
 $text-color-primary: $primary-color;
 $text-color-accent: $accent-color;
 $text-color-secondary: $secondary-color;
-$text-color-quaternary: rgba(20, 16, 36, 0.7);
+$text-color-quaternary: $quaternary-color;
 
 // Фоны
 $bg-color-primary: $secondary-color;
 $bg-color-accent: $accent-color;
 $bg-color-secondary: $primary-color;
+$bg-color-tertiary: $tertiary-color;
 
 // Кнопки и элементы управления
 $controls-bg-primary: $accent-color;

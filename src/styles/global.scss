@@ -20,6 +20,10 @@ section {
   padding: 120px 0;
 }
 
+b {
+  font-weight: 600;
+}
+
 .container {
   margin: 0 auto;
   padding: 0 20px;
@@ -30,10 +34,6 @@ section {
   &--wide {
     max-width: 1760px;
   }
-}
-
-b {
-  font-weight: 600;
 }
 
 .logo {

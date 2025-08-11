@@ -1,1 +1,24 @@
 @use '../variables' as *;
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+
+  &__text {
+    position: absolute;
+    bottom: 100%;
+    left: 0%;
+    margin-bottom: 10px;
+    display: none;
+    background-color: $bg-color-primary;
+    padding: 15px 20px;
+    font-size: 16px;
+    font-weight: 400;
+    width: 251px;
+    border-radius: 5px;
+  }
+
+  &:hover &__text {
+    display: block;
+  }
+}
