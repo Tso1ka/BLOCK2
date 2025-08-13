@@ -6,7 +6,9 @@
 
   &__text {
     position: absolute;
-    display: none;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
     bottom: 100%;
     left: 0%;
     margin-bottom: 10px;
@@ -20,6 +22,7 @@
   }
 
   &:hover &__text {
-    display: block;
+    opacity: 1;
+    visibility: visible;
   }
 }
