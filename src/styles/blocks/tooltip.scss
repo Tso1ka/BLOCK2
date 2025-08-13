@@ -3,26 +3,42 @@
 .tooltip {
   position: relative;
   display: inline-block;
+  cursor: help;
+
+  &__icon {
+    width: 24px;
+    height: 24px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+  }
 
   &__text {
     position: absolute;
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.3s, visibility 0.3s;
     bottom: 100%;
     left: 0%;
-    margin-bottom: 10px;
-    border-radius: 5px;
-    background-color: $bg-color-primary;
     padding: 15px 20px;
-    font-size: 16px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background-color: $bg-color-primary;
+    color: $text-color-primary;
     font-weight: 400;
+    font-size: 16px;
+    white-space: normal;
+    word-break: break-word;
+    z-index: 10;
     width: max-content;
     max-width: 251px;
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+    transition: opacity 0.3s ease;
   }
 
   &:hover &__text {
     opacity: 1;
     visibility: visible;
+    pointer-events: auto;
   }
 }
