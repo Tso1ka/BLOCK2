@@ -2,10 +2,12 @@
 
 .benefits {
   background-color: $bg-color-tertiary;
+  padding: 100px 0;
 
   &__title {
     font-size: 50px;
     font-weight: 600;
+    margin-bottom: 60px;
   }
 
   &__list {
@@ -21,7 +23,6 @@
       &__title {
         font-size: 24px;
         font-weight: 600;
-        margin-top: 60px;
       }
 
       &__text {
