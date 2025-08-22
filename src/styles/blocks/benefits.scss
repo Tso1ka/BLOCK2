@@ -7,7 +7,6 @@
   &__title {
     font-size: 50px;
     font-weight: 600;
-    margin-bottom: 60px;
   }
 
   &__list {
@@ -15,6 +14,7 @@
     justify-content: center;
     flex-wrap: wrap;
     gap: 40px;
+    margin-top: 60px;
 
     .benefits-item {
       flex-basis: 360px;
