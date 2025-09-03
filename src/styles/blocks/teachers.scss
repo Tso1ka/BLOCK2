@@ -67,7 +67,6 @@
       gap: 20px;
 
       &__scrollbar {
-        flex: 1;
         max-width: 360px;
         height: 5px;
         background: $controls-bg-tertiary;
@@ -81,10 +80,10 @@
           width: 260px;
           background: $controls-bg-secondary;
           border-radius: 40px;
-          transition: background-color 0.2s ease;
+          transition: opacity 0.3s ease;
 
           &:hover {
-            background: $controls-bg-secondary-hover;
+            opacity: 0.8;
           }
         }
       }
@@ -99,11 +98,10 @@
           display: flex;
           align-items: center;
           justify-content: center;
-          opacity: 1;
           transition: opacity 0.3s ease;
 
           &:hover {
-            opacity: 0.9;
+            opacity: 0.8;
           }
         }
       }
