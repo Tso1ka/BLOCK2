@@ -81,11 +81,10 @@
           width: 260px;
           background: $controls-bg-secondary;
           border-radius: 40px;
-
           transition: background-color 0.2s ease;
 
           &:hover {
-            background: $controls-bg-secondary-hover; 
+            background: $controls-bg-secondary-hover;
           }
         }
       }
@@ -100,7 +99,7 @@
           display: flex;
           align-items: center;
           justify-content: center;
-          opacity: 1; 
+          opacity: 1;
           transition: opacity 0.3s ease;
 
           &:hover {
