@@ -18,7 +18,7 @@
     .package-card {
       display: flex;
       flex-direction: column;
-      border: 1px solid $shadow-light;
+      border: $border-color-light;
       border-radius: 20px;
       flex: 0 0 360px;
       min-height: 500px;
@@ -49,7 +49,6 @@
 
         .package-header__name {
           position: relative;
-          padding: 0 15px;
 
           &::before,
           &::after {
@@ -63,11 +62,11 @@
             background-color: $controls-bg-secondary;
           }
           &::before {
-            left: -15px;
+            left: -30px;
           }
 
           &::after {
-            right: -15px;
+            right: -30px;
           }
         }
       }
