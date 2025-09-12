@@ -32,7 +32,7 @@
         transform: scale(1.03);
         background-color: $controls-bg-secondary;
         color: $text-color-secondary;
-
+        
         .package-header__name::before,
         .package-header__name::after {
           background-color: $text-color-secondary;
@@ -60,6 +60,7 @@
             height: 3px;
             width: 18px;
             background-color: $controls-bg-secondary;
+            transition: background-color 0.3s ease;
           }
           &::before {
             left: -30px;
