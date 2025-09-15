@@ -75,6 +75,9 @@ b {
 
   &--dark {
     background-color: $controls-bg-secondary;
+    padding: 20px;
+    border-radius: 5px;
+    color: $controls-color-primary;
 
     &:hover {
       background-color: $controls-bg-secondary-hover;
