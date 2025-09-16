@@ -31,5 +31,6 @@ $controls-accent-color: $accent-color;
 
 // Границы
 $border-light: 1px solid #d0cfd3;
-$border-focus: 1px solid #000000;
-$border-error: 1px solid $accent-color;
+$border-color-bg: #f6f6f6;
+$border-color-focus: #000000;
+$border-color-error: $accent-color;
