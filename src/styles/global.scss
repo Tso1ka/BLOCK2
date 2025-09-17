@@ -78,9 +78,12 @@ b {
     padding: 20px;
     border-radius: 5px;
     color: $controls-color-primary;
+    box-sizing: border-box;
+    border: 1px solid  $controls-bg-secondary;
 
     &:hover {
       background-color: $controls-bg-secondary-hover;
+      border-color: $controls-bg-secondary-hover;
     }
   }
 }
