@@ -81,19 +81,3 @@
     }
   }
 }
-
-css
-.form-section__content {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  gap: 64px;
-  width: 100%; /* Добавить */
-}
-
-.form-section__form {
-  flex-basis: 500px;
-  // flex-grow: 1; /* Добавить */
-  // min-width: 300px; /* Добавить */.
-}
