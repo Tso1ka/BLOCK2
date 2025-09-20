@@ -78,10 +78,8 @@ b {
     padding: 18px;
     border-radius: 5px;
     color: $controls-color-primary;
-    box-sizing: border-box;
     border: 1px solid $controls-bg-secondary;
-    line-height: inherit;
-    font-size: inherit;
+    line-height: 26px;
 
     &:hover {
       background-color: $controls-bg-secondary-hover;
