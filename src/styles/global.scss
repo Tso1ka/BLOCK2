@@ -79,7 +79,7 @@ b {
     border-radius: 5px;
     color: $controls-color-primary;
     border: 1px solid $controls-bg-secondary;
-    line-height: 26px;
+    max-height: 64px;
 
     &:hover {
       background-color: $controls-bg-secondary-hover;
