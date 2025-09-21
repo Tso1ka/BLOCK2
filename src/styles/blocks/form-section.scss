@@ -9,7 +9,7 @@
   padding: 87px 0px;
   flex-wrap: nowrap;
 
-  .form-section__content {
+  &__content {
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -18,43 +18,32 @@
     margin: 0 60px;
 
     .form-info {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: flex-start;
-      flex-wrap: wrap;
-      gap: 20px;
       color: $text-color-secondary;
       margin-top: 19px;
       line-height: 1.3;
-      flex: 1 0 0%;
-      min-width: 400px;
+      flex: 1 0 300px;
 
       &__title {
         font-weight: 600;
         font-size: 36px;
-        min-width: min-content;
       }
 
       &__subtitle {
+        margin-top: 20px;
         font-weight: 400;
         font-size: 20px;
       }
     }
 
-    .form-section__form {
+    .form {
       display: flex;
-      justify-content: flex-start;
       flex-direction: column;
-      align-items: stretch;
-      flex-basis: 500px;
+      flex: 0 1 500px;
       gap: 10px;
-      width: 100%;
-      color: $text-color-light;
 
       .input {
-        background-color: $controls-bg-light;
-        border: 1px solid $border-color-bg;
+        background-color: $controls-bg-quaternary;
+        border: 1px solid $controls-bg-quaternary;
         padding: 18px;
         border-radius: 5px;
         width: 100%;
@@ -62,12 +51,16 @@
         max-height: 64px;
 
         &:focus {
-          border-color: $border-color-focus;
+          border-color: $controls-bg-secondary;
         }
 
         &--error {
-          border-color: $border-color-error;
+          border-color: $controls-bg-primary;
         }
+      }
+
+      &__button {
+        max-height: 64px;
       }
     }
   }
