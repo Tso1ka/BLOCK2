@@ -11,6 +11,7 @@ $text-color-primary: $primary-color;
 $text-color-accent: $accent-color;
 $text-color-secondary: $secondary-color;
 $text-color-quaternary: #141024b3;
+$text-color-light: #666779;
 
 // Фоны
 $bg-color-primary: $secondary-color;
@@ -24,8 +25,9 @@ $controls-bg-primary-hover: #b9191d;
 $controls-bg-secondary: $primary-color;
 $controls-bg-secondary-hover: #342858;
 $controls-bg-tertiary: #14102414;
+$controls-bg-quaternary: #f6f6f6;
 $controls-color-primary: $secondary-color;
 $controls-accent-color: $accent-color;
 
 // Границы
-$border-color-light: 1px solid #d0cfd3;
+$border-light: 1px solid #d0cfd3;

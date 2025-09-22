@@ -75,9 +75,11 @@ b {
 
   &--dark {
     background-color: $controls-bg-secondary;
+    padding: 23px;
 
     &:hover {
       background-color: $controls-bg-secondary-hover;
+      border-color: $controls-bg-secondary-hover;
     }
   }
 }
