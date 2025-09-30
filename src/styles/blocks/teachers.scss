@@ -104,15 +104,14 @@
           display: flex;
           align-items: center;
           justify-content: center;
-          transition: 
+          transition:
             transform 0.3s ease,
             opacity 0.3s ease;
 
           &:hover {
             transform: scale(1.03);
             opacity: 0.8;
-            }
-            
+          }
         }
       }
     }
