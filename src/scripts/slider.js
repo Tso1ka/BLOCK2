@@ -3,22 +3,16 @@ const slideButtons = document.querySelectorAll('.slider-controls__button');
 const sliderScrollbar = document.querySelector('.slider-scrollbar');
 const scrollbarThumb = document.querySelector('.slider-scrollbar__thumb');
 
-let isDraggingThumb = false;
-
 const calculateMaxScrollLeft = () => {
   return imageList.scrollWidth - imageList.clientWidth;
 };
-
 const updateScrollbarWidth = () => {
   scrollbarThumb.style.width = `${(imageList.clientWidth / imageList.scrollWidth) * 100}%`;
 };
-
 let sliderMaxScrollLeft = calculateMaxScrollLeft();
 updateScrollbarWidth();
 
 const updateThumbPosition = () => {
-  if (isDraggingThumb) return;
-
   const scrollPosition = imageList.scrollLeft;
   const thumbPosition =
     (scrollPosition / sliderMaxScrollLeft) *
@@ -26,7 +20,6 @@ const updateThumbPosition = () => {
 
   scrollbarThumb.style.left = `${thumbPosition}px`;
 };
-
 imageList.addEventListener('scroll', updateThumbPosition);
 
 document.addEventListener('mousedown', (mouseDownEvent) => {
@@ -36,9 +29,6 @@ document.addEventListener('mousedown', (mouseDownEvent) => {
 
   const startX = mouseDownEvent.clientX;
   const thumbPosition = scrollbarThumb.offsetLeft;
-
-  isDraggingThumb = true;
-
   document.body.style.cursor = 'grabbing';
   scrollbarThumb.style.cursor = 'grabbing';
   document.body.style.userSelect = 'none';
@@ -55,8 +45,6 @@ document.addEventListener('mousedown', (mouseDownEvent) => {
   };
 
   const handleMouseUp = () => {
-    isDraggingThumb = false;
-
     document.body.style.cursor = 'default';
     scrollbarThumb.style.cursor = 'grab';
     document.body.style.userSelect = '';
@@ -73,7 +61,6 @@ const createSlideButtonClickHandler = (buttonId) => () => {
   let scrollAmount = sliderScrollbar.clientWidth * direction;
   imageList.scrollBy({ left: scrollAmount, behavior: 'smooth' });
 };
-
 slideButtons.forEach((button) => {
   button.addEventListener('click', createSlideButtonClickHandler(button.id));
 });
@@ -81,5 +68,4 @@ slideButtons.forEach((button) => {
 window.addEventListener('resize', () => {
   sliderMaxScrollLeft = calculateMaxScrollLeft();
   updateScrollbarWidth();
-  updateThumbPosition();
 });
