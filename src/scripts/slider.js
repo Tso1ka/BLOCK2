@@ -58,7 +58,7 @@ document.addEventListener('mousedown', (mouseDownEvent) => {
 
 const createSlideButtonClickHandler = (buttonId) => () => {
   const direction = buttonId === 'btn-prev' ? -1 : 1;
-  let scrollAmount = sliderScrollbar.clientWidth * direction;
+  let scrollAmount = imageList.clientWidth * direction;
   imageList.scrollBy({ left: scrollAmount, behavior: 'smooth' });
 };
 slideButtons.forEach((button) => {
